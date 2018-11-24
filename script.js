@@ -1,19 +1,6 @@
-function ask() {
-  const result = confirm('Czy chcesz odpowiedzieć na pytanie?')
+const addressUrl = window.prompt('Podaj URL! Pamiętaj o https://... !')
 
-  if (result === true) {
-    const name = prompt('Jak masz na imie?')
-    alert('Cześć ' + name + '!')
-  }
-}
+window.location = addressUrl
 
-ask()
-
-// shorter code is NOT always better!
-const shorterAsk = () => {
-  if (confirm('Czy chcesz odpowiedzieć na pytanie?')) {
-    alert(prompt('Jak masz na imie?'))
-  }
-}
-
-shorterAsk()
+// line below opens URL in new window
+// window.open(addressUrl)
