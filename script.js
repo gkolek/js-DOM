@@ -1,11 +1,7 @@
-function addElement (tag, text, target) { 
-  const newEl = document.createElement(tag) 
-  // const newContent = document.createTextNode(text) 
-  // newEl.appendChild(newContent)
+const square = document.querySelector('.square')
 
-  newEl.innerText = text
+console.log(square.className)
+console.log(square.classList)
 
-  target.appendChild(newEl) 
-}
-
-addElement('div', 'Ala ma kota', document.body)
+square.classList.remove('black')
+square.classList.add('red')
