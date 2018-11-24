@@ -14,3 +14,17 @@ for(let i = 0; i < divsByClass.length; i++){
 
 const divsByTag = document.getElementsByTagName('div')
 console.log(divsByTag) 
+
+// QS for querySelector
+
+const divByIdQS = document.querySelector('#first')
+console.log(divByIdQS)
+
+// we can traverse NodeList by for loop
+// it ALSO DO have forEach function
+// but it is NOT an array
+const divsByClassQS = document.querySelectorAll('.second')
+console.log(divsByClassQS)
+
+const divsByTagQS = document.querySelectorAll('div')
+console.log(divsByTagQS) 
