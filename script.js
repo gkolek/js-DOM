@@ -1,7 +1,6 @@
-const square = document.querySelector('.square')
+const btn = document.querySelector('button')
 
-console.log(square.className)
-console.log(square.classList)
+btn.setAttribute('disabled', '')
+btn.setAttribute('id', 'button')
 
-square.classList.remove('black')
-square.classList.add('red')
+btn.removeAttribute('disabled')
