@@ -8,3 +8,12 @@ function ask() {
 }
 
 ask()
+
+// shorter code is NOT always better!
+const shorterAsk = () => {
+  if (confirm('Czy chcesz odpowiedzieć na pytanie?')) {
+    alert(prompt('Jak masz na imie?'))
+  }
+}
+
+shorterAsk()
