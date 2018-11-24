@@ -1,7 +1,9 @@
-const newDiv = document.createElement('div')
+function addElement (tag, text, target) { 
+  const newEl = document.createElement(tag) 
+  const newContent = document.createTextNode(text) 
+  newEl.appendChild(newContent)
 
-const newText = document.createTextNode('Ala ma kota')
+  target.appendChild(newEl) 
+}
 
-newDiv.appendChild(newText)
-
-document.body.appendChild(newDiv)
+addElement('div', 'Ala ma kota', document.body)
