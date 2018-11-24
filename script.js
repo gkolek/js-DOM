@@ -1,6 +1,4 @@
-const addressUrl = window.prompt('Podaj URL! Pamiętaj o https://... !')
+const div = document.getElementById('first')
 
-window.location = addressUrl
-
-// line below opens URL in new window
-// window.open(addressUrl)
+console.log(div)
+console.dir(div)
