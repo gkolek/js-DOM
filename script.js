@@ -1,30 +1,18 @@
-const h1 = document.createElement('h1')
-const input = document.createElement('input')
-const button = document.createElement('button')
+const btn = document.querySelector('button')
 
-button.innerText = 'Zobacz wartość!'
+btn.setAttribute('disabled', '')
+btn.setAttribute('id', 'button')
 
-input.addEventListener(
-  'input',
-  // () => {
-  //   h1.innerText = input.value
-  // }
-  // this function below has the same
-  // impact that function above
-  // because event.target points at 
-  // element that generate event 
-  (event) => {
-    h1.innerText = event.target.value
-  }
-)
+btn.removeAttribute('disabled')
 
-button.addEventListener(
-  'click',
-  () => {
-    alert(input.value)
-  }
-)
+// btn.style.backgroundColor = 'red'
+// btn.style.borderRadius = '5px'
+// btn.style.border = 'none'
+btn.style.color = 'white'
 
-document.body.appendChild(h1)
-document.body.appendChild(input)
-document.body.appendChild(button)
+// cssText overwrites all styles
+btn.style.cssText = `
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+`
